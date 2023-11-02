@@ -3,6 +3,7 @@ let color_choice;
 let disableButton;
 
 
+
 let kassie_button = document.getElementById('kassies-button');
 kassie_button.onclick = function() {
   button_name = 'kassie';
@@ -54,63 +55,55 @@ lily_button.onclick = function() {
 let black_CT = document.getElementById("blackCT-button");
 black_CT.onclick = function() {
   color_choice = 'Black Cocktail';
-  disableButton = 'blackCT-button';
+  disableButton = 'div1';
 }
 
 let white_CT = document.getElementById("whiteCT-button");
 white_CT.onclick = function() {
   color_choice = 'White Cocktail';
-  disableButton = 'whiteCT-button';
-
+  disableButton = 'div2';
 }
 
 let pink_CT = document.getElementById("pinkCT-button");
 pink_CT.onclick = function() {
   color_choice = 'Pink Cocktail';
-  disableButton = 'pinkCT-button';
-
+  disableButton = 'div3';
 }
 
 let red_CT = document.getElementById("redCT-button");
 red_CT.onclick = function() {
   color_choice = 'Red Cocktail';
-  disableButton = 'redCT-button';
-
+  disableButton = 'div4';
 }
 
 let orange_CT = document.getElementById("orangeCT-button");
 orange_CT.onclick = function() {
   color_choice = 'Orange Cocktail';
-  disableButton = 'orangeCT-button';
-
+  disableButton = 'div5';
 }
 
 let yellow_CT = document.getElementById("yellowCT-button");
 yellow_CT.onclick = function() {
   color_choice = 'Yellow Cocktail';
-  disableButton = 'yellowCT-button';
-
+  disableButton = 'div6';
 }
 
 let green_CT = document.getElementById("greenCT-button");
 green_CT.onclick = function() {
   color_choice = 'Green Cocktail';
-  disableButton = 'greenCT-button';
-
+  disableButton = 'div7';
 }
 
 let blue_CT = document.getElementById("blueCT-button");
 blue_CT.onclick = function() {
   color_choice = 'Blue Cocktail';
-  disableButton = 'blueCT-button';
-
+  disableButton = 'div8';
 }
 
 let purple_CT = document.getElementById("purpleCT-button");
 purple_CT.onclick = function() {
   color_choice = 'Purple Cocktail';
-  disableButton = 'purpleCT-button';
-
+  disableButton = 'div9';
 }
 
 
@@ -129,13 +122,11 @@ submit_button.onclick = function() {
     var span_to_change = button_name + '-span';
     var p_to_change = button_name + '-p';
 
-    document.getElementById(disableButton).disabled = true;
-
-    // console.log(drink_name);
-    // console.log(thought);
-    // console.log(span_heading);
-    // console.log(color_choice);
-    // console.log(button_name);
+    console.log(drink_name);
+    console.log(thought);
+    console.log(span_heading);
+    console.log(color_choice);
+    console.log(button_name);
 
     localStorage.setItem(img_to_change, img_location);
     localStorage.setItem(name_to_change, button_name);
